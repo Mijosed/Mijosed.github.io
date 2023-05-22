@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Vitrine - KIMIAA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KIMIAA</h1>
+    </header>
+
+    <!-- <div class="middle-line horizontal-line"></div>
+    <div class="middle-line vertical-line"></div> -->
+
+    <section class="social-media">
+        <div class="instagram">
+            <a href="https://www.instagram.com/kimiaa_tv/" target="_blank">
+                <div class="social-content">
+                    <img src="instagram-logo.png" alt="Instagram">
+                </div>
+            </a>
+        </div>
+        
+        <div class="twitter">
+            <a href="https://twitter.com/Kimiaa_Fr" target="_blank">
+                <div class="social-content">
+                    <img src="twitter-logo.png" alt="Twitter">
+                </div>
+            </a>
+        </div>
+        
+        <div class="twitch">
+            <a href="https://www.twitch.tv/kimiaa_tv" target="_blank">
+                <div class="social-content">
+                    <img src="twitch-logo.png" alt="Twitch">
+                </div>
+            </a>
+        </div>
+        
+        <div class="youtube">
+            <a href="https://www.youtube.com/channel/UCMAHTY6sg1bb3HVYVL1luew" target="_blank">
+                <div class="social-content">
+                    <img src="youtube-logo.png" alt="Youtube">
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+
+<style>
+    /* Styles pour l'effet de survol */
+    .effet-survol {
+        transform: scale(1.1); /* Exemple : agrandir l'image */
+        transition: transform 0.3s ease-in-out;
+        
+    }
+</style>
+<script>
+    // Récupérer toutes les images
+    const images = document.querySelectorAll('.social-content img');
+
+    // Ajouter un écouteur d'événement pour chaque image
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            // Ajouter la classe CSS pour l'effet souhaité
+            image.classList.add('effet-survol');
+        });
+
+        image.addEventListener('mouseout', () => {
+            // Supprimer la classe CSS pour réinitialiser l'effet
+            image.classList.remove('effet-survol');
+        });
+    });
+</script>
+</html>
+
